@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lambay Island</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="CSS/css.css">
+    </head>
+    <body>
+        <div id="container">
+         <header>
+        <h1>Lambay Island</h1>
+       </header>
+        <nav>
+                <ul>
+                    <li><a href="index.html">Home</a>
+                    <li><a href="description.html">Physical description</a>
+                    <li><a href="history.html">History</a>
+                    <li><a href="animals.html">Animals</a>
+                    <li><a href="addTrip.html">Book a trip</a>    
+                        
+                </ul>
+        </nav>
+        </div>
+        <main>
+             <form action="addApplication.php" method='post'>
+            <fieldset>
+                <legend>Contact Application </legend>
+                
+                <label>Name *</label>
+                <input id='full_name' name='full_name' type='text' title='Please enter your name here' placeholder="Name?" maxlength="20" autofocus required/></br>
+                
+                <label>Telephone *</label>
+                <input id='phone' name='phone' type="text" placeholder="Phone number?" /></br>
+               
+                <label>Email *</label>
+                <input id='email_address' name='email_address' type='email' title="Please enter your e-mail here" placeholder="Email?" maxlength="30" required/></br>
+            
+                <label>Password</label>
+                <input id='password' name='password' type="password" placeholder="Password plz?"/></br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Trip Booking</legend>
+                
+                <label>Time *</label>
+                <input id='time' name='time' type='text' title="Enter a time please" placeholder="Time" required/><br />
+                
+                <label>Date *</label>
+                <input id='date' name='date' type='text' title="Please enter your weight here"  placeholder="Date" required/><br />
+                
+                <label>Accommodation *</label>
+                <input id='yes' name='accommodation_yes' type='radio' value="yes" title="Please choose yes or no" required/>Yes
+                <input id='no' name='accommodation_yes' type='radio' value="no"/>No<br />
+                
+                <label>Type of accommodation</label>
+                <select id='type_acc' name='type_acc' title="Please choose one of the options">
+                    <option value=''>Select from list</option>
+                    <option value='single'>Single room</option>
+                    <option value='double'>Double room</option>
+                    <option value='other'>Other</option>
+                </select><br />
+				
+                <label>How long will you be staying? *</label>
+                <input id='amount_days' name='amount_days' type='number' min='1' max='15' title="Please enter how many days" required/><br />
+            </fieldset>
+            
+                <input type='submit' value='Submit Application' name='addApplication'/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type='reset' value='Reset the Webpage Form' />
+        </form>  
+        </main>
+        <h1>List of bookings</h1>
+        <label class="title">1: &nbsp;&nbsp;</label>
+        <button onclick="window.location.href='ViewApplication.php'">
+            Display all bookings
+        </button><br />
+		<h3>OR</h3>
+		<label class="title">2: &nbsp;&nbsp;</label>
+		<form action="someApplications.php" method='post'>
+			<input type='submit'  value='Search for some applications based on date' name='someApplications' />
+			<input type="text" name="theDate" size="10" placeholder="Enter a date"/>
+		</form>
+        <footer>
+            <div align="center">
+                <img src="images/sims.jpg">
+            </div>
+        <p><span class="red">&copy;Copyright 2015 Paulina P.</span>
+        </p>
+        </footer>
+    </body>
+</html>

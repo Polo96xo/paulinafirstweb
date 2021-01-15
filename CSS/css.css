@@ -1,0 +1,120 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-Oct-2015, 22:43:23
+    Author     : artix
+*/
+
+body
+{ 
+    background-color: #FFCC66;
+    
+    
+    color:black;
+    font-family: arial; 
+    
+}
+main{
+    width:1000px;
+    display:inline-block;
+    padding-left: 10px;
+    
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 5em;
+    color: #C00000 ;
+}
+h2
+{ 
+    font-family: arial;
+    font-size: 1.5em;
+  
+}
+
+
+#container{
+    width:1000px;
+    margin-top:2em; 
+    margin-bottom:2em;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+nav ul
+{
+    margin:0px;
+    padding:0px;
+    font-size:2em;
+    
+         
+}
+nav ul li
+{
+    display:inline-block;
+    float:left;
+    text-align: center;
+    width:50%;
+    
+     
+}
+
+nav ul li a 
+{
+    
+    display:inline-block;
+    width:75%;
+    background-color:#FF8533;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px 5px;
+    margin: 10px;
+     border: 2px solid white;
+     
+}
+nav ul li a:hover
+{
+    
+    background-color:red;
+}
+#iframeDiv{
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+footer p{
+    text-align:right;
+}
+
+.red
+{
+  color:grey;
+    
+}
+/*GROW at http://designshack.net/articles/css/joshuajohnson-2 this is where i got the css */
+.grow img {
+  height: 300px;
+  width: 300px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.grow img:hover {
+  width: 600px;
+  height: 600px;
+}
+.lambaymap
+{
+  display: block;
+  margin: auto;
+  height: 600px;
+  width: 600px;
+}
